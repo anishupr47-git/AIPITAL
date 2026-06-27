@@ -36,7 +36,7 @@ def generate_eda_stats(filepath):
     target_col= 'Heart_Disease_Diagnosis'
     print(f"Checking if the column {target_col} exists.")
     if target_col in df.columns:
-        target_dist = df[target_col].value_counts(normalize=True).to_dict
+        target_dist = df[target_col].value_counts(normalize=True).to_dict()
         print(f"Target Distribution is:{target_dist}")
     else:
         print("Target Column Not Found")
